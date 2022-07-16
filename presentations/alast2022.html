@@ -37,7 +37,7 @@ class: center, middle, inverse, title-slide
 ### Pablo Pérez, Valentina Andrade y Nicolás Godoy<br>.tiny[FONDECYT N°11190229 ‘Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada’]
 ]
 .date[
-### .tiny[15 julio, 2022]
+### .tiny[16 julio, 2022]
 ]
 
 ---
@@ -99,11 +99,14 @@ background-position: 100% 0%
 - Libro de **códigos**
 
 --- 
+
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## ¿Por qué construir FDL?
+class: center, middle
+
+# ¿Por qué construir FDL?
 
 ---
 
@@ -111,7 +114,15 @@ background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## Fuentes de información
+class: center, middle
+
+# Fuentes de información
+
+---
+
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
 
 &lt;table class=" lightable-classic-2" style='font-family: "Arial Narrow", "Source Sans Pro", sans-serif; margin-left: auto; margin-right: auto;'&gt;
  &lt;thead&gt;
@@ -220,132 +231,133 @@ background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## Renacer de la  movilización social
+## Fuentes de información (ejemplos)
 
-&lt;img src="https://docs.google.com/drawings/d/e/2PACX-1vRmNNMlM-t7a4avMicKHyVS_Uk7y50l3gEeGlhVb9XCRmPL9FFyQnFTGC1nJARL8HS2s6dQHsjIrtrQ/pub?w=960&amp;amp;h=720"&gt;
+- **ICTWSS**: *negociación* de salarios, *densidad sindical*
+- **OCDE**: *empleo* por sector, género, indicadores de *crecimiento* económico
+- **WDI**: *población y fuerza de trabajo*, *Ease of Doing Business Index*
+- **WVS**: *confianza* en actores sindicales y *participación* sindical
+- **DPI**: *sistema electoral*, características del *gobierno*
+- **ISSP**: *Identidad* de clase y percepción de *conflicto* de clase
+- **ILO-EPLex**: *protección* a trabajadores, *regulación* de conflicto laboral
+- **ILO-Stat**: *fuerza de trabajo*, *productividad*, *condiciones* salariales, *conflicto* laboral
+- **V-Dem**: nivel de *participación política*, características de *sistemas e instituciones* políticas
+- **Latinobarómetro**: actitudes hacia la *justicia distributiva*, percepción de *poder y confianza* en diversos actores, percepciones de *conflicto* de clase
+- **Eurobarómeter**: percepciones sobre *conflicto* de clase y *orientaciones* valóricas
+
+---
+
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+class: center, middle
+
+# Procesamiento de datos
 
 ---
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## Movilización social y sindical
+## Procesamiento de datos
 
-.tiny[
-![](https://github.com/valentinaandrade/strikes-chile/raw/main/output/graph/strikes-evolution-social-national.png)
+- Procedimientos estandarizados y **reproducibles** en R
+ + Descarga: evitar descarga local de datos a través de **webscrapping**
+ + Transformación de estructura de datos
+ + Transformación de variables
+ + Estimación a nivel agregado para datos de encuestas
+ + Integración
+ + Etiquetado automático 
+ + Unificación final y asignación de nomenclatura
+
+- Un código por fuente + códigos de integración 
+- Todo disponible en [https://github.com/fabrica-datos-laborales/fdl-data](https://github.com/fabrica-datos-laborales/fdl-data) &lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Procesamiento de datos
+
+&lt;img src="img/code_alast_1.png" width="1412" height="550px" /&gt;
+---
+
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Procesamiento de datos
+
+&lt;img src="img/code_alast_2.png" width="1417" height="550px" /&gt;
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+class: center, middle
+
+# Algunos análisis
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Algunos análisis
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+.content-box-red[
+- **Ease of Doing Business Score** (db_wdi) y **Densidad sindical** (tud_ilostat)
+- **Salario mínimo en relación al salario mediano** (mrw_oecd) e **Intervención del gobierno en negociaciones salariales** (govint_ictwss)
+- **Salario nominal medio por hora para empleadas mujeres** (hourearn_fem_isco08_total_ilostat) e **Índice de Empoderamiento Político Femenino**
 ]
 
 ---
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
-## Revitalización huelga: carácter extralegal
 
-![](https://github.com/fabrica-datos-laborales/class-identity-chile/raw/main/output/images/figure1.png)
-
----
-class: fdl-black center middle
-background-image: url("assets/logo/logo-blanco.png")
-background-size: 15%
-background-position: 100% 0%
-
-.white[
-# Hipótesis
-]
-
----
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-# Identidad de clase y posición de clase
-
-- **Posición objetiva de clase** determina las probabilidades de que las personas se **identifiquen** una clase en particular .tiny[*(cf. Jackman y Jackman 1983; Hout 2008; Andersen y Curtis 2012; Oddsson 2018).*]
-
-
-- Posiciones más desaventajadas social y económicamente tienen más probabilidades de identificarse como parte de una clase “baja” .tiny[*(Hout 2008; Elbert y Pérez 2018).*]
-
---
-
-&lt;br&gt; 
-
-&gt; `\(H_1\)`: quienes se ubican en posiciones de clase trabajadora o de clase subordinada (por ejemplo, autoempleados del sector informal) tendrán mayor probabilidad de identificarse con la clase trabajadora que quienes se encuentran ubicadas en posiciones de clase “privilegiadas” (por ejemplo, empleadores, directores de empresa o gerentes de alto nivel)
-
----
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-# Identidad de clase y afiliación sindical
-
-- La participación en sindicatos juega un rol central en la conformación de conciencia y solidaridad de clase (Fantasia, 1988)
-
---
-
-- Sindicalizados tienen muchas mas probabilidades de participar en organizaciones políticas (Kerrissey y Schofer, 2018)
-
-
-- Sindicalizados perciben mayores niveles de oposición de clases que quienes no lo están (Wright, 1997)
-
-
---
-
-&gt; `\(H_2\)`: quienes están sindicalizados tendrán mayor probabilidad de identificarse con la clase trabajadora que quienes no lo están.
-
----
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-# Identidad de clase y politización en el tiempo
-
-- Efecto del ascenso de la movilización social y el cuestionamiento a modelo neoliberal **sobre la identidad de clase trabajadora**
-
---
-
-&gt; `\(H_3\)`: la probabilidad de identificarse con la clase trabajadora en la última década será ser mayor que en la década de 1990 o de 2000
+## Libro de códigos
 
 &lt;br&gt;
---
 
-.pull-left[
-&gt; `\(H4_1\)`: el impacto positivo de ser de clase trabajadora o de clase subordinada sobre la identidad de clase trabajadora será mayor en la última década en comparación a las décadas de 1990 y 2000
+- Bookdown disponible en [https://github.com/fabrica-datos-laborales/fdl-data/tree/main/codebook](https://github.com/fabrica-datos-laborales/fdl-data/tree/main/codebook) &lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+.content-box-red[
+- Una página por fuente de datos. Cada una incluye
+ + **Descripción** de los datos extraídos
+ + Tabla con información sobre
+  + **Nombre** de las variables en los datos
+  + **Concepto** y **definición**
+  + **Rango** de valores
+  + **Tipo** de dato
+  + **Clasificación**
 
 ]
-
-
-.pull-right[
-&gt; `\(H4_2\)`: el impacto positivo de la afiliación sindical sobre la identidad de clase trabajadora será mayor en la última década en comparación a las décadas de 1990 y 2000
-
-]
-
 ---
-class: fdl-black center middle
-background-image: url("assets/logo/logo-blanco.png")
+background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-.white[
-# Datos y métodos
-]
+## Libro de códigos
+
+&lt;img src="img/bookdown-alast2022.png" width="2445" height="550px" /&gt;
 
 ---
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-- **Datos**: la encuesta ISSP, módulo Desigualdades Sociales (1999, 2009 y 2019, *n* = 2.808)
+## Libro de códigos
 
-- **Método**: [modelos de regresión logística en R](https://github.com/fabrica-datos-laborales/class-identity-chile)
-
----
-
-
-
-Nuestros hallazgos sugieren que quienes pertenecen a la clase trabajadora tienen mayores probabilidades de identificarse con dicha clase. Sin embargo, contrario nuestras hipótesis, los análisis no indican que la identidad de clase trabajadora se refuerce como resultado de la afiliación sindical, ni que ella haya aumentado significativamente en la última década. 
-
+&lt;img src="img/bookdown-alast2022_2.png" width="2441" height="550px" /&gt;
 
 ---
+
 class: fdl-black
 background-image: url("assets/logo/logo-blanco.png")
 background-size: 15%
@@ -379,7 +391,18 @@ background-position: 100% 0%
 .white[&lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; @valentinaandrade]
 &lt;/a&gt;
 
-&lt;br&gt;&lt;br&gt;
+&lt;br&gt;
+
+.white[*Nicolás Godoy* - Tesista de pregrado]
+&lt;a href="mailto:nicolas.godoy.m@ug.uchile.cl"&gt;
+.white[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"&gt;&lt;/path&gt;&lt;/svg&gt; nicolas.godoy.m@ug.uchile.cl]
+&lt;/a&gt;
+
+
+&lt;a href="https://github.com/nicolasggodoym"&gt;
+.white[&lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:white;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; @nicolasggodoym]
+&lt;/a&gt;
+
 
 ]]
 

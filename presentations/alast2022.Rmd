@@ -96,11 +96,24 @@ background-position: 100% 0%
 - Libro de **códigos**
 
 --- 
+
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## ¿Por qué construir FDL?
+class: center, middle
+
+# ¿Por qué construir FDL?
+
+---
+
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+class: center, middle
+
+# Fuentes de información
 
 ---
 
@@ -194,132 +207,141 @@ background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## Renacer de la  movilización social
+## Fuentes de información (ejemplos)
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vRmNNMlM-t7a4avMicKHyVS_Uk7y50l3gEeGlhVb9XCRmPL9FFyQnFTGC1nJARL8HS2s6dQHsjIrtrQ/pub?w=960&amp;h=720">
+- **ICTWSS**: *negociación* de salarios, *densidad sindical*
+- **OCDE**: *empleo* por sector, género, indicadores de *crecimiento* económico
+- **WDI**: *población y fuerza de trabajo*, *Ease of Doing Business Index*
+- **WVS**: *confianza* en actores sindicales y *participación* sindical
+- **DPI**: *sistema electoral*, características del *gobierno*
+- **ISSP**: *Identidad* de clase y percepción de *conflicto* de clase
+- **ILO-EPLex**: *protección* a trabajadores, *regulación* de conflicto laboral
+- **ILO-Stat**: *fuerza de trabajo*, *productividad*, *condiciones* salariales, *conflicto* laboral
+- **V-Dem**: nivel de *participación política*, características de *sistemas e instituciones* políticas
+- **Latinobarómetro**: actitudes hacia la *justicia distributiva*, percepción de *poder y confianza* en diversos actores, percepciones de *conflicto* de clase
+- **Eurobarómeter**: percepciones sobre *conflicto* de clase y *orientaciones* valóricas
+
+---
+
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+class: center, middle
+
+# Procesamiento de datos
 
 ---
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-## Movilización social y sindical
+## Procesamiento de datos
 
-.tiny[
-![](https://github.com/valentinaandrade/strikes-chile/raw/main/output/graph/strikes-evolution-social-national.png)
+- Procedimientos estandarizados y **reproducibles** en R
+ + Descarga: evitar descarga local de datos a través de **webscrapping**
+ + Transformación de estructura de datos
+ + Transformación de variables
+ + Estimación a nivel agregado para datos de encuestas
+ + Integración
+ + Etiquetado automático 
+ + Unificación final y asignación de nomenclatura
+
+- Un código por fuente + códigos de integración 
+- Todo disponible en [https://github.com/fabrica-datos-laborales/fdl-data](https://github.com/fabrica-datos-laborales/fdl-data) `r icons::icon_style(icons::fontawesome("github"))`
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Procesamiento de datos
+
+```{r echo=FALSE, out.height = "550px"}
+knitr::include_graphics("img/code_alast_1.png")
+```
+---
+
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Procesamiento de datos
+
+```{r echo=FALSE, out.height= "550px"}
+knitr::include_graphics("img/code_alast_2.png")
+```
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+class: center, middle
+
+# Algunos análisis
+
+---
+background-image: url("assets/logo/logo.png")
+background-size: 15%
+background-position: 100% 0%
+
+## Algunos análisis
+
+<br><br><br><br>
+
+.content-box-red[
+- **Ease of Doing Business Score** (db_wdi) y **Densidad sindical** (tud_ilostat)
+- **Salario mínimo en relación al salario mediano** (mrw_oecd) e **Intervención del gobierno en negociaciones salariales** (govint_ictwss)
+- **Salario nominal medio por hora para empleadas mujeres** (hourearn_fem_isco08_total_ilostat) e **Índice de Empoderamiento Político Femenino**
 ]
 
 ---
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
-## Revitalización huelga: carácter extralegal
 
-![](https://github.com/fabrica-datos-laborales/class-identity-chile/raw/main/output/images/figure1.png)
-
----
-class: fdl-black center middle
-background-image: url("assets/logo/logo-blanco.png")
-background-size: 15%
-background-position: 100% 0%
-
-.white[
-# Hipótesis
-]
-
----
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-# Identidad de clase y posición de clase
-
-- **Posición objetiva de clase** determina las probabilidades de que las personas se **identifiquen** una clase en particular .tiny[*(cf. Jackman y Jackman 1983; Hout 2008; Andersen y Curtis 2012; Oddsson 2018).*]
-
-
-- Posiciones más desaventajadas social y económicamente tienen más probabilidades de identificarse como parte de una clase “baja” .tiny[*(Hout 2008; Elbert y Pérez 2018).*]
-
---
-
-<br> 
-
-> $H_1$: quienes se ubican en posiciones de clase trabajadora o de clase subordinada (por ejemplo, autoempleados del sector informal) tendrán mayor probabilidad de identificarse con la clase trabajadora que quienes se encuentran ubicadas en posiciones de clase “privilegiadas” (por ejemplo, empleadores, directores de empresa o gerentes de alto nivel)
-
----
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-# Identidad de clase y afiliación sindical
-
-- La participación en sindicatos juega un rol central en la conformación de conciencia y solidaridad de clase (Fantasia, 1988)
-
---
-
-- Sindicalizados tienen muchas mas probabilidades de participar en organizaciones políticas (Kerrissey y Schofer, 2018)
-
-
-- Sindicalizados perciben mayores niveles de oposición de clases que quienes no lo están (Wright, 1997)
-
-
---
-
-> $H_2$: quienes están sindicalizados tendrán mayor probabilidad de identificarse con la clase trabajadora que quienes no lo están.
-
----
-background-image: url("assets/logo/logo.png")
-background-size: 15%
-background-position: 100% 0%
-
-# Identidad de clase y politización en el tiempo
-
-- Efecto del ascenso de la movilización social y el cuestionamiento a modelo neoliberal **sobre la identidad de clase trabajadora**
-
---
-
-> $H_3$: la probabilidad de identificarse con la clase trabajadora en la última década será ser mayor que en la década de 1990 o de 2000
+## Libro de códigos
 
 <br>
---
 
-.pull-left[
-> $H4_1$: el impacto positivo de ser de clase trabajadora o de clase subordinada sobre la identidad de clase trabajadora será mayor en la última década en comparación a las décadas de 1990 y 2000
+- Bookdown disponible en [https://github.com/fabrica-datos-laborales/fdl-data/tree/main/codebook](https://github.com/fabrica-datos-laborales/fdl-data/tree/main/codebook) `r icons::icon_style(icons::fontawesome("github"))`
+
+.content-box-red[
+- Una página por fuente de datos. Cada una incluye
+ + **Descripción** de los datos extraídos
+ + Tabla con información sobre
+  + **Nombre** de las variables en los datos
+  + **Concepto** y **definición**
+  + **Rango** de valores
+  + **Tipo** de dato
+  + **Clasificación**
 
 ]
-
-
-.pull-right[
-> $H4_2$: el impacto positivo de la afiliación sindical sobre la identidad de clase trabajadora será mayor en la última década en comparación a las décadas de 1990 y 2000
-
-]
-
 ---
-class: fdl-black center middle
-background-image: url("assets/logo/logo-blanco.png")
+background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-.white[
-# Datos y métodos
-]
+## Libro de códigos
+
+```{r echo=FALSE, out.height = "550px"}
+knitr::include_graphics("img/bookdown-alast2022.png")
+```
 
 ---
 background-image: url("assets/logo/logo.png")
 background-size: 15%
 background-position: 100% 0%
 
-- **Datos**: la encuesta ISSP, módulo Desigualdades Sociales (1999, 2009 y 2019, *n* = 2.808)
+## Libro de códigos
 
-- **Método**: [modelos de regresión logística en R](https://github.com/fabrica-datos-laborales/class-identity-chile)
-
----
-
-
-
-Nuestros hallazgos sugieren que quienes pertenecen a la clase trabajadora tienen mayores probabilidades de identificarse con dicha clase. Sin embargo, contrario nuestras hipótesis, los análisis no indican que la identidad de clase trabajadora se refuerce como resultado de la afiliación sindical, ni que ella haya aumentado significativamente en la última década. 
-
+```{r echo=FALSE, out.height = "550px"}
+knitr::include_graphics("img/bookdown-alast2022_2.png")
+```
 
 ---
+
 class: fdl-black
 background-image: url("assets/logo/logo-blanco.png")
 background-size: 15%
@@ -353,7 +375,18 @@ background-position: 100% 0%
 .white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @valentinaandrade]
 </a>
 
-<br><br>
+<br>
+
+.white[*Nicolás Godoy* - Tesista de pregrado]
+<a href="mailto:nicolas.godoy.m@ug.uchile.cl">
+.white[`r icons::icon_style(icons::fontawesome("paper-plane"), fill = "white")` nicolas.godoy.m@ug.uchile.cl]
+</a>
+
+
+<a href="https://github.com/nicolasggodoym">
+.white[`r icons::icon_style(icons::fontawesome("github"), fill = "white")` @nicolasggodoym]
+</a>
+
 
 ]]
 
