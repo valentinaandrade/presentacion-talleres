@@ -116,7 +116,7 @@ background-position: 100% 0%
 - Diseño cualitativo y cuantitativo
  + *Estudios de caso*
  + Construcción de *base de datos internacional*
-- Vincular el estudio de América Latina a los debatos internacionales sobre *clases*, *relaciones laborales* y *conflicto laboral*
+- Vincular el estudio de América Latina a los debates internacionales sobre *clases*, *relaciones laborales* y *conflicto laboral*
 
 ---
 
