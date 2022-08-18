@@ -1,6 +1,6 @@
 ---
-title: '"Proyectos colaborativos de ciencia de datos para el estudio del mundo del trabajo. <br> Repositorio de Estadísticas Sindicales y Fábrica de Datos Laborales"'
-subtitle: ".small[Congreso de la Asociación Latinoamericana de Estudios del Trabajo (ALAST) / Chile 2022]<br>"
+title: '"Talleres abiertos de R"'
+subtitle: ".small[Análisis de Datos Laborales]<br>"
 author: "Pablo Pérez, Valentina Andrade y Nicolás Godoy<br>.tiny[FONDECYT N°11190229 'Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada']"
 date: ".tiny[`r format(Sys.Date(), '%d %B, %Y')`]"
 output:
